@@ -1,7 +1,8 @@
-package org.sopt.study.catholiclibraryseat
+package org.sopt.study.catholiclibraryseat.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import org.sopt.study.catholiclibraryseat.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
