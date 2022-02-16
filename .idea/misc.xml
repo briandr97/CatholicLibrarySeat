@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/drawable/rectangle_0c2e86_radius_5.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/drawable/rectangle_border_0c2e86.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/drawable/rectangle_border_0c2e86_bottom_radius_5.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/drawable/rectangle_border_0c2e86_bottom_right_radius_5.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/drawable/rectangle_border_0c2e86_top_radius_5.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/drawable/rectangle_border_0c2e86_top_right_radius_5.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/font/paybooc_otf_bold.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/brian/AndroidStudioProjects/CatholicLibrarySeat/app/src/main/res/layout/activity_splash.xml" value="0.17300724637681159" />
       </map>
     </option>

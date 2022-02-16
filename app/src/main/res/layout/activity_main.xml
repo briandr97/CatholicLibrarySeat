@@ -4,15 +4,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_top"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
 
+        <TextView
+            android:id="@+id/tv_rest_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/paybooc_otf_bold"
+            android:text="@string/rest_seat"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/layout_table"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_border_0c2e86_radius_5"
+            android:backgroundTint="@color/catholic_blue_0C2E86"
+            android:stretchColumns="1"
+            android:layout_marginEnd="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_rest_seat"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rest_seat">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rectangle_border_0c2e86_top_left_radius_5"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/spoqahansansneo_bold"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="5dp"
+                    android:padding="5dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/lib_A"
+                    android:textSize="15sp"
+                    android:textColor="@color/catholic_blue_0C2E86"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rectangle_border_0c2e86_top_right_radius_5"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/spoqahansansneo_bold"
+                    android:gravity="left"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="5dp"
+                    android:padding="5dp"
+                    android:text="37"
+                    android:textSize="15sp"
+                    android:textColor="@color/catholic_blue_0C2E86"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/spoqahansansneo_bold"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="5dp"
+                    android:padding="5dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/lib_B"
+                    android:textSize="15sp"
+                    android:textColor="@color/catholic_blue_0C2E86"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/spoqahansansneo_bold"
+                    android:gravity="left"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="5dp"
+                    android:padding="5dp"
+                    android:text="37"
+                    android:textSize="15sp"
+                    android:textColor="@color/catholic_blue_0C2E86"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rectangle_border_0c2e86_bottom_left_radius_5"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/spoqahansansneo_bold"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="5dp"
+                    android:padding="5dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/lib_C"
+                    android:textSize="15sp"
+                    android:textColor="@color/catholic_blue_0C2E86"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rectangle_border_0c2e86_bottom_right_radius_5"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/spoqahansansneo_bold"
+                    android:gravity="left"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="5dp"
+                    android:padding="5dp"
+                    android:text="37"
+                    android:textSize="15sp"
+                    android:textColor="@color/catholic_blue_0C2E86"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+
+        </TableLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,6 +163,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="5dp"
+        android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -33,5 +177,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
