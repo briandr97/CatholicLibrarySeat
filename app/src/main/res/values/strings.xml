@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">Catholic Library Seat</string>
     <string name="rest_seat">잔여 좌석</string>
+    <string name="catholic_university">가톨릭대학교</string>
     <string name="lib_A">자유열람실A</string>
     <string name="lib_B">자유열람실B</string>
     <string name="lib_C">자유열람실C</string>
+    <string name="library">열람실</string>
+    <string name="notebook_seat">노트북 겸용석</string>
+    <string name="normal_seat">칸막이 테이블</string>
+    <string name="notice">위 정보는 1분마다 갱신됩니다.</string>
+    <string name="notebook_apply">노트북좌석 알림신청</string>
+    <string name="notebook_canlce">노트북좌석 알림해제</string>
+    <string name="alert">알림 신청</string>
+    <string name="normal_apply">칸막이좌석 알림신청</string>
+    <string name="normal_canlce">칸막이좌석 알림해제</string>
 </resources>

@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="catholic_blue_0C2E86">#0C2E86</color>
+    <color name="grey_E9ECFF">#E9ECFF</color>
+    <color name="blue_C3CCFC">#C3CCFC</color>
+    <color name="blue_8692D1">#8692D1</color>
 </resources>
