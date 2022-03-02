@@ -23,12 +23,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/circle_background"
-            android:progressDrawable="@drawable/circle_fill"
             android:indeterminateOnly="false"
             android:max="@{seatModel.maxSeat}"
             android:progress="@{seatModel.resSeat}"
-            app:layout_constraintDimensionRatio="1:1"
+            android:progressDrawable="@drawable/circle_fill"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,28 +36,28 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/paybooc_otf_extrabold"
-            android:textSize="15sp"
-            android:textColor="@color/black"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/paybooc_otf_extrabold"
             android:includeFontPadding="false"
             android:text="@{seatModel.lib_title}"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@id/progressBar"
+            app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/lib_A" />
 
         <TextView
             android:id="@+id/tv_left_seat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="잔여좌석: "
-            android:fontFamily="@font/spoqahansansneo_bold"
-            android:textSize="15sp"
-            android:textColor="@color/grey_C6C6C6"
-            android:includeFontPadding="false"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:includeFontPadding="false"
+            android:text="잔여좌석: "
+            android:textColor="@color/grey_C6C6C6"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_title"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
@@ -67,14 +67,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/spoqahansansneo_bold"
-            android:textSize="15sp"
-            android:textColor="@color/grey_C6C6C6"
             android:includeFontPadding="false"
             android:text="@{String.valueOf(seatModel.resSeat)}"
+            android:textColor="@color/grey_C6C6C6"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@id/tv_left_seat"
             app:layout_constraintStart_toEndOf="@+id/tv_left_seat"
             app:layout_constraintTop_toTopOf="@+id/tv_left_seat"
-            tools:text="37"/>
+            tools:text="37" />
 
         <ImageView
             android:id="@+id/iv_off"
@@ -96,6 +96,55 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_on" />
+
+        <TextView
+            android:id="@+id/tv_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(seatModel.resSeat)}"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:includeFontPadding="false"
+            android:textColor="@color/blue_8692D1"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/tv_slash"
+            app:layout_constraintTop_toTopOf="@+id/progressBar"
+            tools:text="37" />
+
+        <TextView
+            android:id="@+id/tv_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:includeFontPadding="false"
+            android:text="/"
+            android:textColor="@color/blue_8692D1"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rest"
+            app:layout_constraintStart_toEndOf="@+id/tv_rest"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/tv_max"
+            app:layout_constraintTop_toTopOf="@id/tv_rest"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(seatModel.maxSeat)}"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:includeFontPadding="false"
+            android:textColor="@color/blue_8692D1"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/progressBar"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_rest"
+            app:layout_constraintStart_toEndOf="@+id/tv_slash"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="@+id/tv_rest"
+            tools:text="120" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
