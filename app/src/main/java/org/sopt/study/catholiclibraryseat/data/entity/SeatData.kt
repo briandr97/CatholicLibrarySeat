@@ -1,6 +1,8 @@
 package org.sopt.study.catholiclibraryseat.data.entity
 
 data class SeatData(
-    val restNotebookSeat : Int,
-    val restNormalSeat : Int
+    val lib_title : String,
+    val maxSeat : Int,
+    val resSeat : Int,
+    var alarm : Boolean = false
 )

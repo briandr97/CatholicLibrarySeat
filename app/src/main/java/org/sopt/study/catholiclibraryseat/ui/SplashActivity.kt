@@ -22,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
         val imagePadding : Int = (ratio*deviceWidth).toInt()
         binding.ivLogo.setPadding(imagePadding, 0, imagePadding, 0)
 
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MainActivity2::class.java)
 
         Handler(Looper.getMainLooper()).postDelayed({
             val fadeAnim : Animation = AnimationUtils.loadAnimation(this, R.anim.splash_animation)

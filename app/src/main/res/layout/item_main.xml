@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="seatModel"
+            type="org.sopt.study.catholiclibraryseat.data.entity.SeatData" />
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle_background"
+            android:progressDrawable="@drawable/circle_fill"
+            android:indeterminateOnly="false"
+            android:max="@{seatModel.maxSeat}"
+            android:progress="@{seatModel.resSeat}"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/paybooc_otf_extrabold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:text="@{seatModel.lib_title}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/progressBar"
+            tools:text="@string/lib_A" />
+
+        <TextView
+            android:id="@+id/tv_left_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잔여좌석: "
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:textSize="15sp"
+            android:textColor="@color/grey_C6C6C6"
+            android:includeFontPadding="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_left_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:textSize="15sp"
+            android:textColor="@color/grey_C6C6C6"
+            android:includeFontPadding="false"
+            android:text="@{String.valueOf(seatModel.resSeat)}"
+            app:layout_constraintBottom_toBottomOf="@id/tv_left_seat"
+            app:layout_constraintStart_toEndOf="@+id/tv_left_seat"
+            app:layout_constraintTop_toTopOf="@+id/tv_left_seat"
+            tools:text="37"/>
+
+        <ImageView
+            android:id="@+id/iv_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_off" />
+
+        <ImageView
+            android:id="@+id/iv_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_on" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
