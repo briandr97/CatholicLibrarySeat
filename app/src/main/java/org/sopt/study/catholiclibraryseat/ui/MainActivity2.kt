@@ -2,12 +2,12 @@ package org.sopt.study.catholiclibraryseat.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import org.sopt.study.catholiclibraryseat.data.entity.SeatData
 import org.sopt.study.catholiclibraryseat.databinding.ActivityMain2Binding
-import org.sopt.study.catholiclibraryseat.databinding.ActivityMainBinding
+import org.sopt.study.catholiclibraryseat.util.MessagingService.Companion.getDeviceToken
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityMain2Binding
@@ -17,6 +17,7 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         initAdapter()
         setContentView(binding.root)
+        getDeviceToken()
     }
 
     fun initAdapter(){
