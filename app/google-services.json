@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152900272957",
+    "project_id": "gadaejwasuk",
+    "storage_bucket": "gadaejwasuk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152900272957:android:210e4b965e0b084b777b54",
+        "android_client_info": {
+          "package_name": "catholic.capstone.pushalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152900272957-ea7uh1ervvv149uvape8v5va85q1mreu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc0zIUwMPhx735MjyIDCyBqaHOuASpzDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152900272957-ea7uh1ervvv149uvape8v5va85q1mreu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
